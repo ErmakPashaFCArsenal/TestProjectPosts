@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FAA2CBAF288F1B6900EB62ED /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2CBAE288F1B6900EB62ED /* PostModel.swift */; };
+		FAA2CBB1288F1D0200EB62ED /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2CBB0288F1D0200EB62ED /* PostsModel.swift */; };
 		FAEAE7D00BF113AE1FBFAAC1 /* Pods_TestProjectPosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB42939BC48DB83C2376133 /* Pods_TestProjectPosts.framework */; };
 		FAEDA901288ED82A0055C799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDA900288ED82A0055C799 /* AppDelegate.swift */; };
 		FAEDA905288ED82A0055C799 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDA904288ED82A0055C799 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		CC63E1C5088F311E5F4BCF9B /* Pods-TestProjectPosts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjectPosts.release.xcconfig"; path = "Target Support Files/Pods-TestProjectPosts/Pods-TestProjectPosts.release.xcconfig"; sourceTree = "<group>"; };
 		CE31B2726483BE7174AC4845 /* Pods-TestProjectPosts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjectPosts.debug.xcconfig"; path = "Target Support Files/Pods-TestProjectPosts/Pods-TestProjectPosts.debug.xcconfig"; sourceTree = "<group>"; };
 		FAA2CBAE288F1B6900EB62ED /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		FAA2CBB0288F1D0200EB62ED /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
 		FAEDA8FD288ED82A0055C799 /* TestProjectPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProjectPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEDA900288ED82A0055C799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEDA904288ED82A0055C799 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA2CBAE288F1B6900EB62ED /* PostModel.swift */,
+				FAA2CBB0288F1D0200EB62ED /* PostsModel.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEDA905288ED82A0055C799 /* ViewController.swift in Sources */,
+				FAA2CBB1288F1D0200EB62ED /* PostsModel.swift in Sources */,
 				FAA2CBAF288F1B6900EB62ED /* PostModel.swift in Sources */,
 				FAEDA901288ED82A0055C799 /* AppDelegate.swift in Sources */,
 			);
