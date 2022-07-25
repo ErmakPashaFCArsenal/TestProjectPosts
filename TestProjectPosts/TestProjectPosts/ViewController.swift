@@ -22,7 +22,14 @@ class ViewController: UIViewController {
                 print(error)
                 return
             }
-        }
+            
+            guard let data = data else { return }
+            
+            let jsonString = String(data: data, encoding: .utf8)
+            if let jsonString = jsonString {
+            print(jsonString)
+            }
+        }.resume()
         
     }
 
