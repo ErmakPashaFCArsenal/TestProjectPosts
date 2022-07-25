@@ -7,5 +7,6 @@ target 'TestProjectPosts' do
 
   # Pods for TestProjectPosts
 pod 'SwiftLint'
+pod 'SnapKit', '~> 5.6.0'
 
 end
