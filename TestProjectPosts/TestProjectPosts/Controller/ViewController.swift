@@ -12,6 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var itemPostsArray: [PostsModel] = {
+        var itemPost = [PostsModel]()
+        itemPost.posts.postId = Int
+        return [itemPost]
+        
+    }()
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,6 +55,8 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        <#code#>
+    }
 }
 

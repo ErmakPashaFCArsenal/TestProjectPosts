@@ -18,3 +18,5 @@ struct PostCellData: Decodable {
     let preview_text: String
     let likes_count: Int
 }
+
+
