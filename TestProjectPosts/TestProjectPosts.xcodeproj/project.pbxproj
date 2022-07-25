@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAA2CBAF288F1B6900EB62ED /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2CBAE288F1B6900EB62ED /* PostModel.swift */; };
 		FAEAE7D00BF113AE1FBFAAC1 /* Pods_TestProjectPosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB42939BC48DB83C2376133 /* Pods_TestProjectPosts.framework */; };
 		FAEDA901288ED82A0055C799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDA900288ED82A0055C799 /* AppDelegate.swift */; };
 		FAEDA905288ED82A0055C799 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDA904288ED82A0055C799 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 		9CB42939BC48DB83C2376133 /* Pods_TestProjectPosts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProjectPosts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC63E1C5088F311E5F4BCF9B /* Pods-TestProjectPosts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjectPosts.release.xcconfig"; path = "Target Support Files/Pods-TestProjectPosts/Pods-TestProjectPosts.release.xcconfig"; sourceTree = "<group>"; };
 		CE31B2726483BE7174AC4845 /* Pods-TestProjectPosts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjectPosts.debug.xcconfig"; path = "Target Support Files/Pods-TestProjectPosts/Pods-TestProjectPosts.debug.xcconfig"; sourceTree = "<group>"; };
+		FAA2CBAE288F1B6900EB62ED /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		FAEDA8FD288ED82A0055C799 /* TestProjectPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProjectPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEDA900288ED82A0055C799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEDA904288ED82A0055C799 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FAA2CBAD288F1A9600EB62ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAA2CBAE288F1B6900EB62ED /* PostModel.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		FAEDA8F4288ED82A0055C799 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +91,7 @@
 			children = (
 				FAEDA900288ED82A0055C799 /* AppDelegate.swift */,
 				FAEDA904288ED82A0055C799 /* ViewController.swift */,
+				FAA2CBAD288F1A9600EB62ED /* Model */,
 				FAEDA906288ED82A0055C799 /* Main.storyboard */,
 				FAEDA909288ED82F0055C799 /* Assets.xcassets */,
 				FAEDA90B288ED82F0055C799 /* LaunchScreen.storyboard */,
@@ -204,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEDA905288ED82A0055C799 /* ViewController.swift in Sources */,
+				FAA2CBAF288F1B6900EB62ED /* PostModel.swift in Sources */,
 				FAEDA901288ED82A0055C799 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
