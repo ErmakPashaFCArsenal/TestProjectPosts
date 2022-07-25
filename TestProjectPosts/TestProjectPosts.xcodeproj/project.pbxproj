@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FAA2CBAF288F1B6900EB62ED /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2CBAE288F1B6900EB62ED /* PostModel.swift */; };
 		FAA2CBB1288F1D0200EB62ED /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2CBB0288F1D0200EB62ED /* PostsModel.swift */; };
+		FAA2CBB3288F267700EB62ED /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2CBB2288F267700EB62ED /* PostCollectionViewCell.swift */; };
 		FAEAE7D00BF113AE1FBFAAC1 /* Pods_TestProjectPosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB42939BC48DB83C2376133 /* Pods_TestProjectPosts.framework */; };
 		FAEDA901288ED82A0055C799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDA900288ED82A0055C799 /* AppDelegate.swift */; };
 		FAEDA905288ED82A0055C799 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDA904288ED82A0055C799 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		CE31B2726483BE7174AC4845 /* Pods-TestProjectPosts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjectPosts.debug.xcconfig"; path = "Target Support Files/Pods-TestProjectPosts/Pods-TestProjectPosts.debug.xcconfig"; sourceTree = "<group>"; };
 		FAA2CBAE288F1B6900EB62ED /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		FAA2CBB0288F1D0200EB62ED /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
+		FAA2CBB2288F267700EB62ED /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAEDA8FD288ED82A0055C799 /* TestProjectPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProjectPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEDA900288ED82A0055C799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEDA904288ED82A0055C799 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		FAA2CBB4288F269100EB62ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAA2CBB2288F267700EB62ED /* PostCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FAEDA8F4288ED82A0055C799 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 				FAEDA904288ED82A0055C799 /* ViewController.swift */,
 				FAA2CBAD288F1A9600EB62ED /* Model */,
 				FAEDA906288ED82A0055C799 /* Main.storyboard */,
+				FAA2CBB4288F269100EB62ED /* View */,
 				FAEDA909288ED82F0055C799 /* Assets.xcassets */,
 				FAEDA90B288ED82F0055C799 /* LaunchScreen.storyboard */,
 				FAEDA90E288ED82F0055C799 /* Info.plist */,
@@ -218,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA2CBB3288F267700EB62ED /* PostCollectionViewCell.swift in Sources */,
 				FAEDA905288ED82A0055C799 /* ViewController.swift in Sources */,
 				FAA2CBB1288F1D0200EB62ED /* PostsModel.swift in Sources */,
 				FAA2CBAF288F1B6900EB62ED /* PostModel.swift in Sources */,
