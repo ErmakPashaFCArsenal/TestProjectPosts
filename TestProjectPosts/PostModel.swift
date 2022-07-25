@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Post: Decodable {
+struct PostModel: Decodable {
     let postId: Int
     let timeshamp: Int
     let title: String
