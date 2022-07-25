@@ -10,8 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        collectionView.dataSource = self
+        collectionView.delegate = self
         
         let urlStringPosts = "https://raw.githubusercontent.com/anton-natife/jsons/master/api/main.json"
         
@@ -39,5 +44,9 @@ class ViewController: UIViewController {
         
     }
 
+}
+
+extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
 }
 
