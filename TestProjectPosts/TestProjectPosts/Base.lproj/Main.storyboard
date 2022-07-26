@@ -103,6 +103,13 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="413" height="185"/>
+                                        <connections>
+                                            <outlet property="dataText" destination="qJW-L1-kb9" id="QaD-VW-BhU"/>
+                                            <outlet property="likeButton" destination="gSR-uC-SQ0" id="nM0-qY-5Iy"/>
+                                            <outlet property="postLabel" destination="1Sy-fp-XQm" id="BlK-bC-A7u"/>
+                                            <outlet property="postTextDescription" destination="ACq-CN-bFA" id="FdI-Uy-XWy"/>
+                                            <outlet property="pushButton" destination="cPN-FL-g42" id="E3M-ct-6KK"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
