@@ -13,8 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     
-    var postsModel:PostsModel?
+    var postsModel: PostsModel?
 //    var postsArray: [PostCellData] = postsModel.posts
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,6 @@ class ViewController: UIViewController {
         let urlStringPosts = "https://raw.githubusercontent.com/anton-natife/jsons/master/api/main.json"
         
         guard let url = URL(string: urlStringPosts) else { return }
-        
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 print(error)
@@ -39,27 +40,31 @@ class ViewController: UIViewController {
 //            print(jsonString)
 //            }
             do{
-                let postsModel = try JSONDecoder().decode(PostsModel.self, from: data)
-                print(postsModel.posts.first?.postId ?? "")
+                self.postsModel = try JSONDecoder().decode(PostsModel.self, from: data)
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+                print(self.postsModel?.posts.first?.postId ?? "")
             }catch{
                print(error)
             }
         }.resume()
-        
     }
 
 }
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return postsModel!.posts.count
+        return postsModel?.posts.count ?? 0
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "postCell", for: indexPath) as! PostCollectionViewCell
-        let 
+        let post = postsModel?.posts[indexPath.row]
+        cell.setupCell(postsModel: post!)
         return cell
     }
-    
+   
+
 }
 
