@@ -12,13 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var itemPostsArray: [PostsModel] = {
-        var itemPost = [PostsModel]()
-        itemPost.posts.postId = Int
-        return [itemPost]
-        
-    }()
-   
+    
+    var postsModel:PostsModel?
+//    var postsArray: [PostCellData] = postsModel.posts
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +39,8 @@ class ViewController: UIViewController {
 //            print(jsonString)
 //            }
             do{
-                let result = try JSONDecoder().decode(PostsModel.self, from: data)
-                print(result.posts.first?.postId ?? "")
+                let postsModel = try JSONDecoder().decode(PostsModel.self, from: data)
+                print(postsModel.posts.first?.postId ?? "")
             }catch{
                print(error)
             }
