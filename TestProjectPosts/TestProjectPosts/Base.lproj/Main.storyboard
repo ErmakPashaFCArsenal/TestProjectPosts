@@ -150,6 +150,21 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="84.375"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="bhs-rN-XwL">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="r2M-Jg-ojM" customClass="DetailViewController" customModule="TestProjectPosts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v3P-XQ-JfM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="V88-6Y-cLI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBv-qT-aJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="84"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jkc-jg-qG2">
             <objects>
