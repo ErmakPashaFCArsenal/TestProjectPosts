@@ -14,15 +14,26 @@ class ViewController: UIViewController {
     
     
     var postsModel: PostsModel?
+    var postModel: PostModel?
 //    var postsArray: [PostCellData] = postsModel.posts
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "detailVC"{
+            if let vc = segue.destination as? DetailViewController {
+                let post = sender as? PostModel
+                print(post ?? "nil")
+                vc.postModel = post
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        collectionView.isUserInteractionEnabled = true
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+
         
         let urlStringPosts = "https://raw.githubusercontent.com/anton-natife/jsons/master/api/main.json"
         
@@ -50,7 +61,6 @@ class ViewController: UIViewController {
             }
         }.resume()
     }
-
 }
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -63,6 +73,11 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         let post = postsModel?.posts[indexPath.row]
         cell.setupCell(postsModel: post!)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let post = postsModel?.posts[indexPath.row]
+        self.performSegue(withIdentifier: "detailVC", sender: post)
     }
    
 

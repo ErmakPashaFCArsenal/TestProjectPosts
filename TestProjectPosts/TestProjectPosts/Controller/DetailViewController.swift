@@ -9,10 +9,21 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var postTextDescription: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+    var postModel: PostModel?
     
-    var postModel:PostModel?
+    @IBOutlet weak var postTextDescription: UILabel!{
+        didSet {
+            postTextDescription.text = postModel?.text
+        }
+    }
+    @IBOutlet weak var imageView: UIImageView!{
+        didSet {
+            guard let image = postModel?.postImage else { return }
+            imageView.image = UIImage(named: image)
+        }
+    }
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
