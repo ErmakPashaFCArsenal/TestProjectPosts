@@ -46,7 +46,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="IBr-SC-Ulr"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.56862745098039214" green="0.60784313725490191" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -102,7 +102,7 @@
                                         <size key="customSize" width="413" height="185"/>
                                         <connections>
                                             <outlet property="dataText" destination="qJW-L1-kb9" id="QaD-VW-BhU"/>
-                                            <outlet property="likeButton" destination="gSR-uC-SQ0" id="nM0-qY-5Iy"/>
+                                            <outlet property="likeButton" destination="gSR-uC-SQ0" id="LAJ-a3-hGm"/>
                                             <outlet property="postLabel" destination="1Sy-fp-XQm" id="BlK-bC-A7u"/>
                                             <outlet property="postTextDescription" destination="ACq-CN-bFA" id="FdI-Uy-XWy"/>
                                             <outlet property="pushButton" destination="cPN-FL-g42" id="E3M-ct-6KK"/>
