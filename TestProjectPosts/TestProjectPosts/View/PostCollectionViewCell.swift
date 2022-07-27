@@ -17,6 +17,7 @@ class PostCollectionViewCell: UICollectionViewCell {
     
     func setupCell(postsModel: PostCellData) {
         self.postLabel.text = postsModel.title
+        self.postTextDescription.text = postsModel.preview_text
     }
     
     
