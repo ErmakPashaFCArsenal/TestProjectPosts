@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="r8h-8z-QIY">
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="r8h-8z-QIY">
                                 <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8wE-PT-vI9">
@@ -29,9 +29,9 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="postCell" id="JA3-tr-8DH" customClass="PostCollectionViewCell" customModule="TestProjectPosts" customModuleProvider="target">
-                                        <rect key="frame" x="0.66666666666666663" y="0.0" width="413" height="185"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PostCollectionViewCell" insetsLayoutMarginsFromSafeArea="NO" id="wRR-j1-8dt" customClass="PostCollectionViewCell" customModule="TestProjectPosts" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="0.0" width="413" height="185"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PostCollectionViewCell" insetsLayoutMarginsFromSafeArea="NO" id="wRR-j1-8dt" customClass="PostCollectionViewCell" customModule="TestProjectPosts" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="413" height="185"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -159,13 +159,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXg-cu-KpS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LXg-cu-KpS">
                                 <rect key="frame" x="0.0" y="44" width="414" height="427"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="He was also a bit of a jokester and liked to have fun at the expense of others." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evn-YW-v8w">
-                                <rect key="frame" x="34" y="490" width="346" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="He was also a bit of a jokester and liked to have fun at the expense of others." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evn-YW-v8w">
+                                <rect key="frame" x="-70" y="490" width="554" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="tBu-Mf-59U"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.56862745100000001" green="0.60784313729999995" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -173,6 +174,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V88-6Y-cLI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V88-6Y-cLI" firstAttribute="bottom" secondItem="evn-YW-v8w" secondAttribute="bottom" constant="201" id="2uz-Mf-cE3"/>
+                            <constraint firstItem="evn-YW-v8w" firstAttribute="centerX" secondItem="v3P-XQ-JfM" secondAttribute="centerX" id="EDZ-sH-QqT"/>
+                            <constraint firstItem="LXg-cu-KpS" firstAttribute="top" secondItem="V88-6Y-cLI" secondAttribute="top" id="Im8-tb-cnc"/>
+                            <constraint firstItem="LXg-cu-KpS" firstAttribute="leading" secondItem="V88-6Y-cLI" secondAttribute="leading" id="JWC-qt-Eop"/>
+                            <constraint firstItem="evn-YW-v8w" firstAttribute="top" secondItem="LXg-cu-KpS" secondAttribute="bottom" constant="19" id="VpZ-Mw-vTb"/>
+                            <constraint firstItem="evn-YW-v8w" firstAttribute="centerX" secondItem="LXg-cu-KpS" secondAttribute="centerX" id="n3I-AS-VAQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VOA-qE-dGm"/>
                     <connections>
