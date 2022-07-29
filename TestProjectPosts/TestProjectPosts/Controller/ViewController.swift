@@ -60,6 +60,28 @@ class ViewController: UIViewController {
                print(error)
             }
         }.resume()
+        
+        let urlStringPost = "https://raw.githubusercontent.com/anton-natife/jsons/master/api/posts/112.json"
+        
+        guard let url = URL(string: urlStringPost) else { return }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            guard let data = data else { return }
+            
+            do{
+                self.postModel = try JSONDecoder().decode(PostModel.self, from: data)
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+                print(self.postModel?.postId ?? "")
+            }catch{
+                print(error)
+            }
+        }.resume()
     }
 }
 

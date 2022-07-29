@@ -154,42 +154,25 @@
         <!--Detail View Controller-->
         <scene sceneID="bhs-rN-XwL">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBv-qT-aJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="DetailViewController" id="r2M-Jg-ojM" customClass="DetailViewController" customModule="TestProjectPosts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v3P-XQ-JfM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LXg-cu-KpS">
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXg-cu-KpS">
                                 <rect key="frame" x="0.0" y="44" width="414" height="427"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="He was also a bit of a jokester and liked to have fun at the expense of others." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evn-YW-v8w">
-                                <rect key="frame" x="-70" y="490" width="554" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="tBu-Mf-59U"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.56862745100000001" green="0.60784313729999995" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V88-6Y-cLI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="V88-6Y-cLI" firstAttribute="bottom" secondItem="evn-YW-v8w" secondAttribute="bottom" constant="201" id="2uz-Mf-cE3"/>
-                            <constraint firstItem="evn-YW-v8w" firstAttribute="centerX" secondItem="v3P-XQ-JfM" secondAttribute="centerX" id="EDZ-sH-QqT"/>
-                            <constraint firstItem="LXg-cu-KpS" firstAttribute="top" secondItem="V88-6Y-cLI" secondAttribute="top" id="Im8-tb-cnc"/>
-                            <constraint firstItem="LXg-cu-KpS" firstAttribute="leading" secondItem="V88-6Y-cLI" secondAttribute="leading" id="JWC-qt-Eop"/>
-                            <constraint firstItem="evn-YW-v8w" firstAttribute="top" secondItem="LXg-cu-KpS" secondAttribute="bottom" constant="19" id="VpZ-Mw-vTb"/>
-                            <constraint firstItem="evn-YW-v8w" firstAttribute="centerX" secondItem="LXg-cu-KpS" secondAttribute="centerX" id="n3I-AS-VAQ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VOA-qE-dGm"/>
                     <connections>
                         <outlet property="imageView" destination="LXg-cu-KpS" id="REJ-n2-v9W"/>
-                        <outlet property="postTextDescription" destination="evn-YW-v8w" id="HlU-8K-A4C"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WBv-qT-aJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1831.8840579710147" y="83.967391304347828"/>
         </scene>
