@@ -23,5 +23,4 @@ class PostCollectionViewCell: UICollectionViewCell {
         self.pushButton.layer.cornerRadius = 10.0
     }
     
-    
 }

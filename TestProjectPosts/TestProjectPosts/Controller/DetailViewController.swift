@@ -23,9 +23,7 @@ class DetailViewController: UIViewController {
         }
     }
     
-   
-    
-    override func viewDidLoad() {
+   override func viewDidLoad() {
         super.viewDidLoad()
 
     }
